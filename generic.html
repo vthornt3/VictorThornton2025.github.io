@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Victor Thornton - About</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Victor Thornton</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Projects</a></li>
+							<li class="active"><a href="generic.html">About Me</a></li>
+
+						</ul>
+						<ul class="icons">
+									<li><a href="https://www.linkedin.com/in/victor-thornton-4ba5b11a0/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/vthornt3" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Getting to Know Me</h1>
+									<p>I’m here to make care easier on families like mine—because the stakes are personal.</p>
+								</header>
+								<div class="image main"><img src="images/Hopkins Sweatshirt.JPEG" alt="" /></div>
+								<p>Before my senior year, things changed for my family. Within 3 months of one another, my dad broke his hip due to military service connected Parkinson's and Dementia related psychosis, and my mom found a brain tumor. We have been figuring out our changed home routines and navigating an ocean of systems - including the VA process, which can be a daunting and frustrating experience. From my parents, I learned that serving others and making a positive impact was a valuable compass to have.</p> 
+								<p>This compass has guided me in my academic and professional pursuits. One moment that still resonates with me: two weeks of waiting for biopsy results after my mom's surgery. The delay and uncertainty instigated a desire to work on the science and tools that improve patient outcomes and streamline healthcare processes. It is a part of why I chose to take a path in biotech and medical devices; it is my hope that patients and families like mine may benefit from the advancements I create.</p>
+								<p>When I am not focused on academics or working in industry, I am outside. I have visited 14 national parks in the last three years! Within the next ten years I plan to see all 63 of them. I am also a proud Southeast Texas from Beaumont, and I love to cook. Sharing food and communion with others is an act of love that stems from my Hispanic culture and I am always open to sharing the recipes I know with the team. I value kindness under pressure, clarity, and follow-through. With these I believe real change can be made.</p>
+							</section>
+
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<form id="contact-form" action="https://formspree.io/f/mandlrdq" method="POST">
+  								<div class="fields">
+    								<div class="field">
+      									<label for="name">Name</label>
+      									<input type="text" name="name" id="name" required />
+    								</div>
+    								<div class="field">
+      									<label for="email">Email</label>
+      									<input type="email" name="email" id="email" required />
+    								</div>
+    								<div class="field">
+      									<label for="message">Message</label>
+      									<textarea name="message" id="message" rows="3" required></textarea>
+    								</div>
+  								</div>
+  								<input type="hidden" name="_subject" value="New message from Victor's portfolio" />
+  								<input type="text" name="_honeypot" style="display:none" tabindex="-1" autocomplete="off" />
+
+  								<ul class="actions">
+    								<li><button type="submit">Send Message</button></li>
+  								</ul>
+
+  								<p id="form-status" aria-live="polite" style="margin-top:.75rem;"></p>
+							</form>
+
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>Location</h3>
+								<p>Baltimore, MD</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="tel:+14098933315">(409) 893-3315</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="mailto:vthornt3@jh.edu">vthornt3@jh.edu</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.linkedin.com/in/victor-thornton-4ba5b11a0/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/vthornt3" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+		<script>
+  (function () {
+    const form = document.getElementById('contact-form');
+    const statusEl = document.getElementById('form-status');
+
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+      statusEl.textContent = 'Sending...';
+
+      try {
+        const data = new FormData(form);
+        const res = await fetch(form.action, {
+          method: form.method,
+          headers: { 'Accept': 'application/json' },
+          body: data
+        });
+
+        if (res.ok) {
+          form.reset();
+          statusEl.textContent = 'Thanks! Your message was sent.';
+        } else {
+          const err = await res.json().catch(() => ({}));
+          statusEl.textContent = (err.errors && err.errors.map(e => e.message).join(', ')) || 'Oops—something went wrong.';
+        }
+      } catch {
+        statusEl.textContent = 'Network error. Please try again.';
+      }
+    });
+  })();
+</script>
+	</body>
+</html>

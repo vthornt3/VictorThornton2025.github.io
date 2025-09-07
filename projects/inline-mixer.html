@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<!--
+  Project: Inline Lipid-Reagent Mixer — Victor Thornton
+  Theme: Massively by HTML5 UP
+-->
+<html>
+  <head>
+    <title>Inline Lipid-Reagent Mixer | Victor Thornton</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+  </head>
+  <body class="is-preload">
+    <div id="wrapper">
+
+      <!-- Header -->
+      <header id="header">
+        <a href="../index.html#projects" class="logo" aria-label="Back to Projects">Victor Thornton</a>
+      </header>
+
+      <!-- Nav -->
+      <nav id="nav">
+        <ul class="links">
+          <li class="active"><a href="../index.html#projects">Projects</a></li>
+          <li><a href="../generic.html">About Me</a></li>
+        </ul>
+        <ul class="icons">
+          <li><a href="https://www.linkedin.com/in/victor-thornton-4ba5b11a0/" class="icon brands fa-linkedin" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
+          <li><a href="mailto:vthornt3@jh.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+          <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+        </ul>
+      </nav>
+
+      <!-- Main -->
+      <div id="main">
+        <article class="post">
+          <header class="major">
+            <span class="date">2022</span>
+            <h1>Inline Lipid-Reagent Mixer to Prevent Line Crystallization</h1>
+            <p>Engineered an <strong>inline mixing + gentle recirculation</strong> module with a short <strong>heated section</strong> to keep a lipid-based transfection reagent homogeneous—eliminating crystal buildup and line clogs in automated runs.</p>
+          </header>
+          <h2>Overview</h2>
+          <p>
+            Automated transfection workflows were failing intermittently due to reagent crystallization in low-flow segments and dwell zones, causing pressure spikes and clogged tubing. I designed an inline mixer cartridge that maintains homogeneity, minimizes nucleation sites, and drops into existing plumbing without disrupting throughput.
+          </p>
+
+          <h2>My Role</h2>
+          <ul>
+            <li>Lead for <strong>root-cause analysis</strong> (pressure/flow logging, dwell mapping, temp correlation).</li>
+            <li>Mechanical design of a <strong>quick-swap static-mixer cartridge</strong> with localized heat jacket.</li>
+            <li>Test planning &amp; execution: soak tests, multi-day reliability, <strong>pressure-drop</strong> characterization.</li>
+            <li>Created BOM, drawings, <strong>build guide</strong>, cleaning <strong>SOP</strong>, and operator troubleshooting tree.</li>
+          </ul>
+
+          <h2>Problem → Approach → Outcome</h2>
+          <p><strong>Problem:</strong> Crystallization and deposition after short dwell times and cold spots in the line → clogs, aborted runs, and high MTTR.</p>
+          <p><strong>Approach:</strong> Instrumented the line with in-line pressure and flow logs; correlated failure events with <em>dwell</em>, <em>temperature</em>, and <em>shear</em>. Prototyped a compact static-mixer geometry (tri-clamp housing) to avoid clogging.</p>
+          <p><strong>Outcome:</strong> Pilot runs showed minimal clog events and faster recoveries. Operators could run more experiments without interruptions.</p>
+
+          <h2>Design Highlights</h2>
+          <ul>
+            <li><strong>Static-mixer core:</strong> tuned element pitch to balance mixing vs. pressure drop.</li>
+            <li><strong>Cleanability:</strong> smooth internal radii; compatible with cleaning SOP.</li>
+            <li><strong>Repeatable by design:</strong> clear prints, wide tolerance stack, and no exotic processes—so you can produce &ldquo;N more&rdquo; units on short notice.</li>
+          </ul>
+
+          <h2>Validation &amp; Results</h2>
+          <ul>
+            <li><strong>Clog event rate:</strong> ↓ by <em>~94%</em> vs. baseline over <em>10</em> multi-day runs.</li>
+            <li><strong>Run success rate:</strong> ↑ by <em>~20%</em>; aborted runs reduced from <em>18%</em> to <em>1.2%</em>.</li>
+          </ul>
+
+          <h2>Troubleshooting &amp; Ops</h2>
+          <ul>
+            <li>“If-this-then-that” triage card for operators (pressure spike, flow stall, temp drift).</li>
+            <li>Pre-flight checks added to reduce setup errors (air in line).</li>
+            <li>Uptime dashboard tags mixer swaps and correlates with downstream performance.</li>
+          </ul>
+
+          <h2>Artifacts</h2>
+          <ul>
+            <li>CAD, drawings, and <strong>BOM</strong> for mixer cartridge + heat jacket.</li>
+            <li><strong>Build guide</strong>, cleaning <strong>SOP</strong>, and operator decision tree.</li>
+            <li>Pressure/flow logs and reliability report.</li>
+          </ul>
+
+          <hr />
+
+          <ul class="actions special">
+            <li><a href="../index.html#projects" class="button">← Back to Projects</a></li>
+          </ul>
+
+          <!-- Note: Keep brand-neutral (“lipid-based transfection reagent”). 
+               If you prefer, you can replace with a specific brand name. -->
+        </article>
+      </div>
+
+      <!-- Footer (optional lightweight contact) -->
+      <footer id="footer">
+        <section class="split contact">
+          <section class="alt">
+            <h3>Location</h3>
+            <p>Baltimore, MD</p>
+          </section>
+          <section>
+            <h3>Email</h3>
+            <p><a href="mailto:vthornt3@jh.edu">vthornt3@jh.edu</a></p>
+          </section>
+          <section>
+            <h3>LinkedIn</h3>
+            <p><a href="https://www.linkedin.com/in/victor-thornton-4ba5b11a0/" target="_blank" rel="noopener noreferrer">/in/victor-thornton-4ba5b11a0</a></p>
+          </section>
+        </section>
+      </footer>
+
+      <div id="copyright">
+        <ul><li>&copy; Victor Thornton</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.scrollex.min.js"></script>
+    <script src="../assets/js/jquery.scrolly.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

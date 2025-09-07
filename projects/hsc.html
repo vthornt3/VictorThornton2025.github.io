@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<!--
+  Project: Home Storage Case (HSC) — Victor Thornton
+  Theme: Massively by HTML5 UP
+-->
+<html>
+  <head>
+    <title>HSC – Home Storage Case | Victor Thornton</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+      <!-- Header -->
+      <header id="header">
+        <a href="../index.html#projects" class="logo" aria-label="Back to Projects">Victor Thornton</a>
+      </header>
+
+      <!-- Nav -->
+      <nav id="nav">
+        <ul class="links">
+          <li class="active"><a href="../index.html#projects">Projects</a></li>
+          <li><a href="../generic.html">About Me</a></li>
+        </ul>
+        <ul class="icons">
+									<li><a href="https://www.linkedin.com/in/victor-thornton-4ba5b11a0/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/vthornt3" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+        </ul>
+      </nav>
+
+      <!-- Main -->
+      <div id="main">
+
+        <article class="post">
+          <header class="major">
+            <span class="date">2025</span>
+            <h1>Home Storage Case (HSC) for Cold-Chain Drug Delivery</h1>
+            <p>Combined <strong>human factors engineering</strong> with <strong>thermal validation</strong> to help patients store temperature-sensitive biologics correctly in domestic refrigerators (target: 2–8&nbsp;°C).</p>
+          </header>
+
+          <!-- Hero image -->
+          <span class="image fit">
+            <!-- Swap to a real image when you have it -->
+            <img src="../images/HSC.png" alt="Home Storage Case (HSC) prototype instrumented with thermocouples in a household refrigerator" />
+          </span>
+
+          <h2>Overview</h2>
+          <p>
+            At-home refrigerators have hot spots, defrost cycles, and door-opening spikes that can push therapies outside the 2–8&nbsp;°C range. Usability issues—like where patients place the case, how they load it, and how often the door opens—are just as impactful as the device design. This project integrates
+            <em>use-related risk analysis (URRA)</em>, <em>IFU/labeling improvements</em>, and <em>instrumented thermal testing</em> to produce a storage accessory patients can use correctly the first time.
+          </p>
+
+          <h2>My Role</h2>
+          <ul>
+            <li>HFE lead for <strong>task analysis</strong>, <strong>URRA</strong>, and IFU/quick-start content.</li>
+            <li>Test engineering: thermocouple layout, data logging, and <strong>acceptance criteria</strong> definition.</li>
+            <li>Statistics &amp; analysis in <strong>JMP/Minitab</strong>; DOE setup and reporting.</li>
+          </ul>
+
+          <h2>Problem → Approach → Outcome</h2>
+          <p><strong>Problem:</strong> Temperature excursions driven by fridge variability and foreseeable use errors (placement, loading, door-open dwell).</p>
+          <p><strong>Approach:</strong> Mapped the end-to-end user journey (unbox → load → place → monitor). Built a URRA linking hazards to mitigations (design affordances, placement cues, and IFU revisions). In parallel, executed a five-test thermal suite with instrumented HSC and controlled scenarios.</p>
+          <p><strong>Outcome:</strong> Drafted updated IFU/quick-start with explicit placement guidance and “do/don’t” visuals; created traceability from <em>hazard → mitigation → test → acceptance</em>. Bench results showed improved time-in-range across door-open and power-outage simulations. <em>(Insert your actual metrics below.)</em></p>
+
+          <h2>Test Matrix (Thermal Suite)</h2>
+          <ul>
+            <li><strong>Trapped hot air</strong> (initial load &amp; equilibration)</li>
+            <li><strong>Stability</strong> (steady-state shelf location &amp; loading levels)</li>
+            <li><strong>Door-opening</strong> (frequency &amp; dwell sensitivity)</li>
+            <li><strong>Power-outage</strong> (warm-up profile &amp; recovery upon restore)</li>
+            <li><strong>Defrost cycling</strong> (periodic spikes &amp; damping)</li>
+          </ul>
+
+          <h2>Design &amp; HFE Highlights</h2>
+          <ul>
+            <li>Clear <strong>placement cues</strong> and labeling to reduce cognitive load and errors.</li>
+            <li>Thermocouple <strong>layout</strong> for core vs. ambient mapping; logging cadence tuned to capture door events.</li>
+            <li><strong>Acceptance criteria</strong> aligned to product stability needs (time-in-range, peak excursion, recovery time).</li>
+            <li>URRA + FMEA with actionable mitigations suitable for formative and summative evaluation.</li>
+          </ul>
+
+          <h2>DOE &amp; Analysis</h2>
+          <p>
+            Factorial screens across shelf position, load mass, door-open interval, and ambient fluctuations.
+            Primary responses: <em>% time within 2–8&nbsp;°C</em>, <em>max excursion</em>, and <em>recovery time</em>.
+            Effects and interactions summarized via ANOVA; tolerance intervals computed for worst-case guidance.
+          </p>
+
+<h2>Results (human-factors–driven scenarios)</h2>
+<ul>
+  <li><strong>Out-of-fridge placement (10 min) → re-equilibration:</strong>
+    4.3&nbsp;&deg;C → <strong>7.4&nbsp;&deg;C</strong> (+3.1&nbsp;&deg;C), returned to ~4.3&nbsp;&deg;C within <strong>~3 h</strong>.
+  </li>
+  <li><strong>Fridge door slightly ajar (~3 in) for 60 min:</strong>
+    3.9&nbsp;&deg;C → <strong>5.8&nbsp;&deg;C</strong> (+1.9&nbsp;&deg;C).
+  </li>
+  <li><strong>Brief openings (15 s every 15 min for 2 h):</strong>
+    4.3&nbsp;&deg;C → <strong>5.0&nbsp;&deg;C</strong> (+0.7&nbsp;&deg;C) → back to 4.3&nbsp;&deg;C.
+  </li>
+  <li><strong>Power outage (unplugged 3 h):</strong>
+    4.0&nbsp;&deg;C → <strong>5.6&nbsp;&deg;C</strong> (+1.6&nbsp;&deg;C), then declined after power restore.
+  </li>
+</ul>
+<p><strong>Overall:</strong> All scenarios stayed within the 2–8&nbsp;&deg;C target range. Largest rise (+3.1&nbsp;&deg;C) occurred during out-of-fridge exposure and required ~3 h to re-equilibrate; door-ajar and power-loss produced smaller excursions; frequent brief openings had minimal impact.</p>
+<p><strong>HFE link:</strong> Scenarios map to observed user errors and foreseeable misuse, enabling clear IFU mitigations and recovery guidance.</p>
+
+          <ul class="actions special">
+            <li><a href="../index.html#projects" class="button">← Back to Projects</a></li>
+          </ul>
+        </article>
+
+      </div>
+
+      <!-- Footer (optional: copy your contact form here if you want it on project pages) -->
+      <footer id="footer">
+        <section class="split contact">
+          <section class="alt">
+            <h3>Location</h3>
+            <p>Baltimore, MD</p>
+          </section>
+          <section>
+            <h3>Email</h3>
+            <p><a href="mailto:vthornt3@jh.edu">vthornt3@jh.edu</a></p>
+          </section>
+          <section>
+            <h3>LinkedIn</h3>
+            <p><a href="https://www.linkedin.com/in/victor-thornton-4ba5b11a0/" target="_blank" rel="noopener noreferrer">/in/victor-thornton-4ba5b11a0</a></p>
+          </section>
+        </section>
+      </footer>
+
+      <!-- Copyright -->
+      <div id="copyright">
+        <ul><li>&copy; Victor Thornton</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.scrollex.min.js"></script>
+    <script src="../assets/js/jquery.scrolly.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
